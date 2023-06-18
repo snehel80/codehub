@@ -1,5 +1,6 @@
 import React from "react";
 import {IoClose} from "react-icons/io5"
+import Login from "./Login";
 
 type AuthModalProps = {};
 
@@ -17,10 +18,10 @@ const AuthModal: React.FC<AuthModalProps>=()=>{
 								type='button'
 								className='bg-transparent  rounded-lg text-sm p-1.5 ml-auto inline-flex items-center hover:bg-gray-800 hover:text-white text-white'
 							>
-								<IoClose className="h-5 w-5" />
+								<IoClose className="h-5 w-5<Login />" />
 							</button>
 						</div>
-						
+						<Login />
 					</div>
 				</div>
 			</div>
