@@ -17,7 +17,7 @@ const Navbar: React.FC<NavbarProps> = () => {
                 transition duration-300 ease-in-out
                 '
                 >
-                    Sign In
+                    SignIn
                 </button>
             </div>
         </div>
