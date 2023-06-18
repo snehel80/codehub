@@ -1,5 +1,6 @@
 import React from "react";
 import {IoClose} from "react-icons/io5"
+import ResetPassword from "./ResetPassword";
 
 type AuthModalProps = {};
 
@@ -20,7 +21,6 @@ const AuthModal: React.FC<AuthModalProps>=()=>{
 								<IoClose className="h-5 w-5" />
 							</button>
 						</div>
-						
 					</div>
 				</div>
 			</div>
