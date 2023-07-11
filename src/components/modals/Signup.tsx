@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { auth } from "@/firebase/firebase";
 import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
 import { useRouter } from "next/router";
+import { authModalState } from "../../atoms/authModalAtom";
+import { useSetRecoilState } from "recoil";
 
 type SignupProps = {};
 
