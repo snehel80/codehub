@@ -1,6 +1,6 @@
-import { authModalState } from "@/atoms/AuthModalAtom";
+import { authModalState } from "@/atoms/authModalAtom";
 import react from "react";
-import {useSetRecoilState} from "recoil";
+import { useSetRecoilState } from "recoil";
 
 type SignupProps = {
 
@@ -9,9 +9,9 @@ type SignupProps = {
 const Signup: React.FC<SignupProps> = () => {
 
     const setAuthModalState = useSetRecoilState(authModalState);
-	const handleClick = (type : "login" | "register" | "forgotPassword") => {
-		setAuthModalState((prev) => ({...prev,type:"login"}))
-	}
+    const handleClick = (type: "login" | "register" | "forgotPassword") => {
+        setAuthModalState((prev) => ({ ...prev, type: "login" }))
+    }
     return (
         <form className="space-y-6 px-6 py-4">
             <h3 className="text-xl font-medium text-white">Register to Code Hub</h3>
@@ -55,7 +55,7 @@ const Signup: React.FC<SignupProps> = () => {
             >
                 Register
             </button>
-            
+
             <div className='text-sm font-medium text-gray-300'>
                 Already have an account?{" "}
                 <a href='#' className='text-blue-700 hover:underline' onClick={() => handleClick("login")}>
